@@ -3,12 +3,168 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/path/to/tailwind.css" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
   <!-- ... -->
 </head>
-<body>
-  <h1 class="font-bold">Hello</h1>
+<body class="bg-gray-100">
+  <div class="flex justify-between px-6 py-4 bg-white">
+    <div class="flex items-center">
+      <div class="px-2">
+        <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+        </svg>
+      </div>
+      <div class="px-6">
+        <img class="w-20 h-5" src="images/yt_logo.png" alt="Youtube logo">
+      </div>
+    </div>
+    <div class="flex w-2/5 -mt-1 ">
+      <input type="text" class="px-2  w-4/5 border-solid border border-gray-200 focus:outline-none focus:border-solid focus:border-blue-600" placeholder="Recherche" id="text1">
+      <div class="bg-gray-100 px-5 py-2 border-solid border-b border-t border-r border-gray-200 hover:bg-gray-200">
+        <svg class="w-4 fill-current text-gray-500" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 373.12 373.12" style="enable-background:new 0 0 373.12 373.12;" xml:space="preserve">
+          <g>
+            <path d="M266.667,234.667h-16.96l-5.867-5.867c20.907-24.213,33.493-55.68,33.493-90.133C277.333,62.08,215.253,0,138.667,0
+              S0,62.08,0,138.667s62.08,138.667,138.667,138.667c34.453,0,65.92-12.587,90.133-33.387l5.867,5.867v16.853L341.333,373.12
+              l31.787-31.787L266.667,234.667z M138.667,234.667c-53.013,0-96-42.987-96-96c0-53.013,42.987-96,96-96c53.013,0,96,42.987,96,96
+              C234.667,191.68,191.68,234.667,138.667,234.667z"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="flex items-center">
+      <div class="px-2">
+        <svg class="w-6 text-gray-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        </svg>
+      </div>
+      <div class="px-2">
+        <svg class="w-6 text-gray-600"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+        </svg>
+      </div>
+      <div class="px-2">
+        <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+          <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+        </svg>
+      </div>
+      <div class="px-2">
+        <img class="w-8 rounded-full" src="https://yt3.ggpht.com/yti/ANoDKi7Ps2M-4JFdWclNf6asCLdmNwNWDxuuej-LAQ=s108-c-k-c0x00ffffff-no-rj" alt="Youtube logo">
+      </div>
+    </div>
+  </div>
+
+<!-- Fin navbar
+
+Debut page -->
+
+  <div class="flex">
+<!--     Gauche -->
+    <div class="flex flex-col py-4 h-screen bg-white">
+      <div>
+        <button class="w-24 flex flex-col items-center py-3 hover:bg-gray-100">
+
+          <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+          </svg>
+          <span class="mt-2 text-gray-600 text-xs">Accueil</span>
+        </button>
+
+      </div>
+      <div>
+        <button class="w-24 flex flex-col items-center py-3 hover:bg-gray-100">
+          <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd" />
+          </svg>
+          <span class="mt-2 text-gray-600 text-xs">Tendances</span>
+        </button>
+      </div>
+      <div>
+        <button class="w-24 flex flex-col items-center py-3 hover:bg-gray-100">
+          <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M2 6a2 2 0 012-2h5l2 2h5a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6z" />
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 9v4m0 0l-2-2m2 2l2-2" />
+          </svg>
+          <span class="mt-2 text-gray-600 text-xs">Abonnements</span>
+        </button>
+      </div>
+      <div>
+        <button class="w-24 flex flex-col items-center py-3 hover:bg-gray-100">
+          <svg class="w-6 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+          <span class="mt-2 text-gray-600 text-xs">Bibliothèque</span>
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <img  class="w-screen h-80 object-cover flex-grow" src="https://www.magneticmag.com/.image/t_share/MTc3MzUwNDk1OTUyNzA4NzY5/kid-cudi-man-on-the-moon-iii.jpg" alt="">
+      </div>
+      <div class="px-72 py-6 bg-gray-50">
+
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+
+            <img class="rounded-full" src="https://yt3.ggpht.com/ytc/AAUvwngPQPLNhsXzTNoSunE4YtWicdlleq9V9Kt_6u7F=s88-c-k-c0x00ffffff-no-rj" alt="">
+
+            <div class="flex flex-col px-4">
+              <div class="flex">
+                <h1 class="font-bolder text-2xl">Kid Cudi</h1>
+                <svg class="w-4 mx-2 fill-current text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z" />
+                </svg>
+              </div>
+              <span class="text-gray-500 ">1.71 M abonnés</span>
+            </div>
+          </div>
+
+          <div>
+            <button class="px-4 py-2 bg-red-700 uppercase text-white">s'abonner</button>
+          </div>
+        </div>
+
+        <div class="flex pt-3 px-2">
+          <button class="px-7 py-2 border-solid border-b-4 border-gray-600 uppercase font-bolder text-black focus:outline-none">Accueil</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">Vidéos</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">Playlists</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">Communauté</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">Boutique</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">Chaînes</button>
+          <button class="px-7 py-2 uppercase font-bolder text-gray-600 hover:text-black focus:outline-none">à propos</button>
+          <svg class="w-4 mx-8 fill-current text-gray-500" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 373.12 373.12" style="enable-background:new 0 0 373.12 373.12;" xml:space="preserve">
+            <g>
+              <path d="M266.667,234.667h-16.96l-5.867-5.867c20.907-24.213,33.493-55.68,33.493-90.133C277.333,62.08,215.253,0,138.667,0
+                S0,62.08,0,138.667s62.08,138.667,138.667,138.667c34.453,0,65.92-12.587,90.133-33.387l5.867,5.867v16.853L341.333,373.12
+                l31.787-31.787L266.667,234.667z M138.667,234.667c-53.013,0-96-42.987-96-96c0-53.013,42.987-96,96-96c53.013,0,96,42.987,96,96
+                C234.667,191.68,191.68,234.667,138.667,234.667z"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="flex px-72 py-6 mr-40">
+        <div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/H2ijRKurtw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="flex flex-col px-6">
+          <h2 class="font-bolder text-base pb-6">Kid Cudi: Heaven On Earth - The Rager, The Menace Part 2 (Ar... </h2>
+          <span class="pb-8 text-gray-500 ">154 897 vues il y a 11 heures</span>
+          <p class="pb-7">Kid Cudi: Heaven On Earth - The Rager, The Menace Part 2 (Artist Spotlight Stories). A short film featuring music from the anticipated new album "Man On The Moon III: The Chosen". Get the new album now: https://kidcudi.lnk.to/MOTM3​
+          </p>
+          <p class="pb-5">►Subscribe to Kid Cudi on YouTube: https://KidCudi.lnk.to/subscribeID</p>
+          <span class="text-sm font-bold">LIRE LA SUITE</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
 </body>
 </html>
